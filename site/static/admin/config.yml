@@ -17,5 +17,6 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Restricted"
             name: "restricted"
             widget: "list"
-
-
+            fields:
+              - {label: id, name: id, widget: number}
+              

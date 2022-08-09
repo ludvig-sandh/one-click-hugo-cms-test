@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
-public_folder: "..img"
+public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "data" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -12,7 +12,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Categories"
         name: "categories"
-        file: "site/static/data/categories.yml"
+        file: "site/content/data/categories.yml"
         fields: # The fields each document in this collection have
           - label: "Restricted"
             name: "restricted"

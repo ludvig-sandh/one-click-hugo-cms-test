@@ -6,15 +6,18 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  - label: "Data" # Used in the UI, ie.: "New Post"
-    name: "data" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "data" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Data" # Used in the UI, ie.: "New Post"
+    # folder: "site/content/data" # The path to the folder where the documents are stored
     files:
       - label: "Categories"
         name: "categories"
         file: "site/content/data/categories.yml"
         fields: # The fields each document in this collection have
-          - {label: "Restricted", name: "restricted", widget: "list"}
-            field:
+          - label: "Restricted"
+            name: "restricted"
+            widget: "list"
+            fields:
               - {label: id, name: id, widget: number}
 
 
